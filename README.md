@@ -6,3 +6,5 @@ In your Vagrantfile add the below line:
 `config.vm.provision :shell, path: "./vagrant-rails.sh"`
 
 Then the first time you run `vagrant up` the provisioner script will get triggered and 20 minutes after all the installs have finished you can get developing.
+
+More information on using Shell for Vagrant provisioning: https://docs.vagrantup.com/v2/provisioning/shell.html
