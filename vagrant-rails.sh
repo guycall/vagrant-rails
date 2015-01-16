@@ -2,8 +2,6 @@
 
 # Purpose: minimalistic provisioning of a fresh vagrant box ubuntu/trusty64 for 
 # rails development. Uses shell as the provisioner.
-# More details https://docs.vagrantup.com/v2/provisioning/shell.html
-# Original File: https://gist.github.com/guycall/430dca8985f56924e03a
 
 # Ensure OS is up to date
 sudo apt-get update
