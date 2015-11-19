@@ -7,11 +7,20 @@
 sudo apt-get update
 sudo apt-get dist-upgrade
 
-# Needed by gems that build native extensions
-sudo apt-get install -y build-essential
+# 14.04LTS has Ruby 1.9.3. 15.04 & above have Ruby 2.x
+# Add brightbox repository to get newer versions of ruby
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+
+# Install newer Ruby
+sudo apt-get install -y ruby2.0
 
 # Needed for the json gem
-sudo apt-get install -y ruby-dev
+sudo apt-get install -y ruby2.0-dev
+
+# Needed by gems that build native extensions
+sudo apt-get install -y build-essential
 
 # Needed to build sqlite3 gem
 sudo apt-get install -y libsqlite3-dev
