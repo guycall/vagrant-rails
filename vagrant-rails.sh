@@ -14,10 +14,10 @@ sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
 
 # Install newer Ruby
-sudo apt-get install -y ruby2.0
+sudo apt-get install -y ruby2.1
 
 # Needed for the json gem
-sudo apt-get install -y ruby2.0-dev
+sudo apt-get install -y ruby2.1-dev
 
 # Needed by gems that build native extensions
 sudo apt-get install -y build-essential
