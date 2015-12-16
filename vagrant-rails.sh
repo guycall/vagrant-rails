@@ -28,6 +28,9 @@ sudo apt-get install -y libsqlite3-dev
 # Needed to build mysql gem
 sudo apt-get install -y libmysqlclient-dev
 
+# Needed by eventmachine for encrypted connections
+sudo apt-get install -y libssl-dev
+
 # Rails needs a JavaScript runtime
 sudo apt-get install -y nodejs
 
